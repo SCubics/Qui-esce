@@ -1,0 +1,214 @@
+  body {
+    font-family: Arial, sans-serif; /* Définit la police d'écriture utilisée pour tout le texte du corps du document, en ordre de priorité */
+    text-align: center; /* Centre le texte dans le corps du document */
+    margin: 0; /* Supprime toutes les marges par défaut du corps du document */
+    padding: 0; /* Supprime tous les remplissages par défaut du corps du document */
+    background: linear-gradient(to bottom, #1d1c2b, #13131a); /* Définit un dégradé linéaire du violet foncé au noir pour le fond du corps du document */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-attachment: fixed; /* Fixe l'image de fond afin qu'elle ne défile pas avec le contenu de la page */
+  }
+  
+  h1 {
+    font-size: 36px; /* Définit la taille de police pour les en-têtes de niveau 1 à 36 pixels */
+    margin-top: 50px; /* Définit une marge supérieure de 50 pixels pour les en-têtes de niveau 1 */
+
+    background-color: hsl(240, 1%, 17%);/* Couleur de fond */
+    border-radius: 0px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
+    box-shadow: 0 0 10px #9b9a9a; /* Ajoute une ombre au formulaire */
+    background-position: center; /* Centre le fond */
+    border-radius: 10px; /* Arrondis les bord */
+    margin: 50px auto; /* Centre le formulaire dans la page et ajoute une marge supérieure de 50 pixels */
+    max-width: 500px; /* Définit la largeur maximale du formulaire à 500 pixels */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du formulaire */
+    color: rgb(240, 240, 240); /* couleur de texte */
+  }
+  
+  form {
+    margin: 50px auto; /* Centre le formulaire dans la page et ajoute une marge supérieure de 50 pixels */
+    max-width: 500px; /* Définit la largeur maximale du formulaire à 500 pixels */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du formulaire */
+    background-color: #3f3f46; /* Définit la couleur de fond du formulaire à gris clair */
+    border-radius: 10px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
+    box-shadow: 0 0 10px #3b3a3a; /* Ajoute une ombre au formulaire */
+    color: rgb(240, 240, 240); /* couleur de texte */
+  }
+  
+  label {
+    display: block; /* Affiche les étiquettes au-dessus des champs de saisie */
+    font-size: 20px; /* Définit la taille de police pour les étiquettes à 20 pixels */
+    margin-bottom: 10px; /* Ajoute une marge inférieure de 10 pixels aux étiquettes */
+    text-align: left; /* Aligne le texte des étiquettes à gauche */
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px; /* Ajoute une marge à droite de 5 pixels aux boutons radio et cases à cocher pour les séparer légèrement du texte */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%; /* Définit la largeur des champs de saisie, zone de texte et menus déroulants à 100% de la largeur disponible */
+    padding: 10px; /* Ajoute un remplissage de 10 pixels à l'intérieur des champs de saisie, zone de texte et menus déroulants */
+    border: none; /* Supprime la bordure par défaut des champs de saisie, zone de texte et menus déroulants */
+    border-radius: 5px; /* Ajoute un rayon de 5 pixels aux coins des champs de saisie, zone de texte et menus déroulants pour les rendre arrondis */
+    margin-bottom: 20px; /* Ajoute une marge */
+    font-size: 18px; /* Taille de la police d'écriture */
+    background-color: #27272c; /* Couleur de fond */
+    border-radius: 10px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
+    box-shadow: 0 0 10px #050505; /* Ajoute une ombre au formulaire */
+    color: rgb(240, 240, 240); /* couleur de texte */
+  }
+
+  /* Style pour le bouton */
+button {
+    background-color: #4CAF50; /* couleur d'arrière-plan */
+    border: none; /* pas de bordure */
+    color: rgb(240, 240, 240); /* couleur de texte */
+    padding: 10px 20px; /* rembourrage */
+    text-align: center; /* centrage du texte */
+    text-decoration: none; /* pas de décoration de texte */
+    display: block; /* affichage en tant que bloc */
+    margin: 0 auto; /* centrage horizontal */
+    font-size: 20px; /* taille de police */
+    border-radius: 5px; /* bordure arrondie */
+    cursor: pointer; /* curseur de souris */
+    width: 100%; /* largeur de 100% */
+    max-width: 200px; /* largeur maximale de 200px */
+  }
+  
+  /* Style pour le survol du bouton */
+  button:hover {
+    opacity: 0.8; /* opacité de 80% */
+  }
+  
+  /* Style pour le résultat */
+  .result {
+    margin-top: 50px; /* marge supérieure de 50px */
+    font-size: 24px; /* taille de police de 24px */
+    font-weight: bold; /* épaisseur de police en gras */
+  }
+  
+  /* Style pour le bouton "Recommencer" */
+  .restart {
+    margin-top: 20px; /* marge supérieure de 20px */
+  }
+  
+  /* Style pour l'image en bas de la page */
+  #bottom-image {
+    position: fixed; /* position fixe */
+    bottom: 0; /* aligné en bas */
+    left: 50%; /* centré horizontalement */
+    transform: translateX(-50%); /* décalage horizontal de -50% */
+    width: 200px; /* largeur de 200px */
+    height: auto; /* hauteur automatique */
+    z-index: -1; /* ordre de profondeur */
+    background-image: url("image.png"); /* image de fond */
+    background-size: contain; /* taille de l'image de fond */
+    background-repeat: no-repeat; /* pas de répétition d'image */
+  }
+  
+  /* Style pour les images */
+  img {
+    border-radius: 130px; /* bordure arrondie de 130px */
+  }
+  
+  /* Style pour les titres de niveau 1 */
+  h1 {
+    font-size: 36px; /* taille de police de 36px */
+    margin-top: 50px; /* marge supérieure de 50px */
+  }
+  
+  /* Style pour le formulaire */
+  form {
+    margin: 50px auto; /* marges intérieures */
+    max-width: 500px; /* largeur maximale de 500px */
+    padding: 20px; /* rembourrage */
+    background-color: #242424; /* couleur d'arrière-plan */
+    border-radius: 10px; /* bordure arrondie */
+    box-shadow: 0 0 10px #3b3a3a; /* ombre de la boîte */
+  }
+  
+  /* Style pour les étiquettes */
+  label {
+    display: block; /* affichage en tant que bloc */
+    font-size: 20px; /* taille de police de 20px */
+    margin-bottom: 10px; /* marge inférieure de 10px */
+    text-align: left; /* alignement du texte à gauche */
+  }
+  
+  /* Style pour les éléments de formulaire */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px; /* Ajoute une marge de 5px à droite pour les boutons radio et les cases à cocher */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%; /* Définit la largeur à 100% pour les champs de texte, les zones de texte et les menus déroulants */
+  padding: 10px; /* Ajoute un rembourrage de 10px à l'intérieur des champs */
+  border: none; /* Supprime la bordure */
+  border-radius: 5px; /* Ajoute un rayon de courbure de 5px pour les coins du champ */
+  margin-bottom: 20px; /* Ajoute une marge inférieure de 20px pour faciliter la lecture */
+  font-size: 18px; /* Définit la taille de police à 18px */
+}
+
+button {
+  background-color: #4CAF50; /* Définit la couleur de fond du bouton */
+  border: none; /* Supprime la bordure */
+  color: rgb(0, 0, 0); /* Définit la couleur du texte à blanc */
+  padding: 10px 20px; /* Ajoute un rembourrage de 10px en haut et en bas et de 20px à gauche et à droite */
+  text-align: center; /* Centre le texte dans le bouton */
+  text-decoration: none; /* Supprime la décoration de lien par défaut */
+  display: block; /* Affiche le bouton en tant qu'élément de bloc pour occuper toute la largeur */
+  margin: 0 auto; /* Centre le bouton horizontalement en utilisant une marge automatique */
+  font-size: 20px; /* Définit la taille de police à 20px */
+  border-radius: 5px; /* Ajoute un rayon de courbure de 5px pour les coins du bouton */
+  cursor: pointer; /* Définit le curseur de la souris en tant que pointeur */
+  width: 100%; /* Définit la largeur à 100% pour occuper toute la largeur de son conteneur */
+  max-width: 200px; /* Définit la largeur maximale du bouton */
+}
+
+button:hover {
+  opacity: 0.8; /* Réduit l'opacité du bouton lorsqu'il est survolé avec la souris */
+}
+
+.result {
+  margin-top: 50px; /* Ajoute une marge supérieure de 50px pour faciliter la lecture */
+  font-size: 24px; /* Définit la taille de police à 24px */
+  font-weight: bold; /* Définit le poids de la police en gras */
+}
+
+.restart {
+  margin-top: 20px; /* Ajoute une marge supérieure de 20px pour faciliter la lecture */
+}
+
+#bottom-image {
+    position: fixed; /* Définit la position de l'image en position fixe */
+    bottom: 0; /* Place l'image en bas de la page */
+    left: 50%; /* Place l'image à 50% de la largeur de l'écran à partir de la gauche */
+    transform: translateX(-50%); /* Centre l'image horizontalement en décalant de 50% de sa propre largeur vers la gauche */
+    width: 200px; /* détermine la largeur de l'image à 200 pixels */
+    height: auto; /* définit la hauteur de l'image automatiquement pour maintenir le ratio */
+    z-index: -1; /* définit la valeur z-index comme -1 pour placer l'image en arrière-plan */
+    background-image: url("image.png"); /* définit l'image à utiliser comme image.png */
+    background-size: contain; /* ajuste la taille de l'image pour qu'elle soit contenue dans le conteneur */
+    background-repeat: no-repeat; /* empêche la répétition de l'image */
+  }
+
+  img {
+    border-radius: 130px; /* définit le rayon de la bordure de l'image */
+  }
+  
+  .white-background {
+    text-align: center; /* aligne le texte */
+    background-position: center; /* Centre le fond */
+    padding: 10px; /* Taille */
+    margin-left: 650px; /* Espace a gauche pour centrer */
+    margin-right: 650px; /* Espace a droite pour centrer */
+    background-color: #333232; /* Couleur de fond */
+    border-radius: 10px; /* Arrondis les bord */
+  }
