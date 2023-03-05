@@ -1,6 +1,4 @@
-/* Css */
-
-body {
+  body {
     font-family: Arial, sans-serif; /* Définit la police d'écriture utilisée pour tout le texte du corps du document, en ordre de priorité */
     text-align: center; /* Centre le texte dans le corps du document */
     margin: 0; /* Supprime toutes les marges par défaut du corps du document */
@@ -13,6 +11,15 @@ body {
   h1 {
     font-size: 36px; /* Définit la taille de police pour les en-têtes de niveau 1 à 36 pixels */
     margin-top: 50px; /* Définit une marge supérieure de 50 pixels pour les en-têtes de niveau 1 */
+
+    background-color: hsl(240, 100%, 92%);/* Couleur de fond */
+    border-radius: 0px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
+    box-shadow: 0 0 10px #9b9a9a; /* Ajoute une ombre au formulaire */
+    background-position: center; /* Centre le fond */
+    border-radius: 10px; /* Arrondis les bord */
+    margin: 50px auto; /* Centre le formulaire dans la page et ajoute une marge supérieure de 50 pixels */
+    max-width: 500px; /* Définit la largeur maximale du formulaire à 500 pixels */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du formulaire */
   }
   
   form {
@@ -202,14 +209,3 @@ button:hover {
     background-color: #333232; /* Couleur de fond */
     border-radius: 10px; /* Arrondis les bord */
   }
-  
-  h1{
-        background-color: hsl(240, 100%, 92%);/* Couleur de fond */
-        border-radius: 0px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
-        box-shadow: 0 0 10px #9b9a9a; /* Ajoute une ombre au formulaire */
-        background-position: center; /* Centre le fond */
-        padding: 10px; /* Taille */
-        margin-left: 600px; /* Espace a gauche pour centrer */
-        margin-right: 600px; /* Espace a droite pour centrer */
-        border-radius: 10px; /* Arrondis les bord */
-      }
