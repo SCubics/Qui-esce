@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Définit l'encodage des caractères de la page -->
+  <meta charset="UTF-8">
+  <!-- Titre de la page affiché dans l'onglet du navigateur -->
+  <title>Qui-Esce ?</title>
+  <!-- Fichier CSS contenant les styles de la page -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Div utilisée pour le fond du site -->
+  <div id="background"></div>
+  <!-- Div utilisée pour afficher l'image du robot -->
+  <div id="robot"></div>
+  <!-- Titre principal de la page -->
+  <h1>Je devine qui tu es !</h1>
+  <!-- Formulaire de questions utilisé pour deviner qui est l'utilisateur -->
+  <form id="question-form">
+    <label for="couple">Es-tu en couple ?</label>
+<!-- Liste déroulante pour la réponse à la question "Es-tu en couple ?" -->
+<select id="couple" name="couple">
+  <option value="oui">Oui</option>
+  <option value="non">Non</option>
+</select>
+
+<label for="parle-conjoint">Parles-tu souvent avec ton/ta conjoint(e) ?</label>
+
+<!-- Liste déroulante pour la réponse à la question "Parles-tu souvent avec ton/ta conjoint(e) ?" -->
+<select id="parle-conjoint" name="parle-conjoint">
+  <option value="oui">Oui</option>
+  <option value="non">Non</option>
+</select>
+
+<label for="college">Es-tu au collège ?</label>
+
+<!-- Liste déroulante pour la réponse à la question "Es-tu au collège ?" -->
+<select id="college" name="college">
+  <option value="oui">Oui</option>
+  <option value="non">Non</option>
+</select>
+
+<!-- Bouton pour soumettre les réponses du formulaire -->
+<div class="button-container">
+  <button type="submit" id="submit-button">Soumettre</button>
+</div>
+  </form>
+  <!-- Div utilisée pour afficher le résultat de la devinette -->
+  <div id="result" style="display:none;">
+<!-- Titre pour le résultat de la devinette -->
+<h2 id="result-text"></h2>
+
+<!-- Bouton pour recommencer la devinette -->
+<button type="button" id="restart-button">Recommencer</button>
+  </div>
+  <!-- Image affichée à la fin de la devinette -->
+  <img src="image.png" alt="Image description" id="image"/>
+  <!-- Script contenant la logique de la devinette -->
+  <script src="brain.js"></script>
+</body>
+</html>
