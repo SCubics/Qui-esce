@@ -4,8 +4,9 @@
     margin: 0; /* Supprime toutes les marges par défaut du corps du document */
     padding: 0; /* Supprime tous les remplissages par défaut du corps du document */
     background: linear-gradient(to bottom, #1d1c2b, #13131a); /* Définit un dégradé linéaire du violet foncé au noir pour le fond du corps du document */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-repeat: no-repeat; /* empeche la répétition de l'image de fond */
     background-attachment: fixed; /* Fixe l'image de fond afin qu'elle ne défile pas avec le contenu de la page */
+    background-color: #13131a; /* couleur de fond d'écran */
   }
   
   h1 {
@@ -85,10 +86,16 @@ button {
   
   /* Style pour le résultat */
   .result {
-    margin-top: 50px; /* marge supérieure de 50px */
-    font-size: 24px; /* taille de police de 24px */
-    font-weight: bold; /* épaisseur de police en gras */
-  }
+    border-radius: 0px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
+    box-shadow: 0 0 10px #9b9a9a; /* Ajoute une ombre au formulaire */
+    background-position: center; /* Centre le fond */
+    border-radius: 10px; /* Arrondis les bord */
+    margin: 50px auto; /* Centre le formulaire dans la page et ajoute une marge supérieure de 50 pixels */
+    max-width: 500px; /* Définit la largeur maximale du formulaire à 500 pixels */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du formulaire */
+    color: rgb(240, 240, 240); /* couleur de texte */
+  font-weight: bold; /* Définit le poids de la police en gras */
+}
   
   /* Style pour le bouton "Recommencer" */
   .restart {
@@ -147,15 +154,6 @@ input[type="checkbox"] {
 input[type="text"],
 input[type="email"],
 textarea,
-select {
-  width: 100%; /* Définit la largeur à 100% pour les champs de texte, les zones de texte et les menus déroulants */
-  padding: 10px; /* Ajoute un rembourrage de 10px à l'intérieur des champs */
-  border: none; /* Supprime la bordure */
-  border-radius: 5px; /* Ajoute un rayon de courbure de 5px pour les coins du champ */
-  margin-bottom: 20px; /* Ajoute une marge inférieure de 20px pour faciliter la lecture */
-  font-size: 18px; /* Définit la taille de police à 18px */
-}
-
 button {
   background-color: #4CAF50; /* Définit la couleur de fond du bouton */
   border: none; /* Supprime la bordure */
@@ -174,12 +172,6 @@ button {
 
 button:hover {
   opacity: 0.8; /* Réduit l'opacité du bouton lorsqu'il est survolé avec la souris */
-}
-
-.result {
-  margin-top: 50px; /* Ajoute une marge supérieure de 50px pour faciliter la lecture */
-  font-size: 24px; /* Définit la taille de police à 24px */
-  font-weight: bold; /* Définit le poids de la police en gras */
 }
 
 .restart {
@@ -204,11 +196,9 @@ button:hover {
   }
   
   .white-background {
-    text-align: center; /* aligne le texte */
-    background-position: center; /* Centre le fond */
-    padding: 10px; /* Taille */
-    margin-left: 650px; /* Espace a gauche pour centrer */
-    margin-right: 650px; /* Espace a droite pour centrer */
-    background-color: #333232; /* Couleur de fond */
+    margin-left: 25 px auto; /* Centre le formulaire dans la page et ajoute une marge supérieure de 50 pixels */
+    border-radius: 0px; /* Ajoute un rayon de 10 pixels aux coins du formulaire pour le rendre arrondi */
     border-radius: 10px; /* Arrondis les bord */
+    color: rgb(240, 240, 240); /* couleur de texte */
+    font-weight: bold; /* Définit le poids de la police en gras */
   }
